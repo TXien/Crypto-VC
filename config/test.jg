@@ -1,0 +1,2 @@
+var env = require('./default');
+console.log(env.Config())

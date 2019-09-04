@@ -1,0 +1,8 @@
+{
+    "mongodb_production": "",
+    "mongodb_production_user": "",
+    "mongodb_production_pass": "",
+    "mongodb_development": "mongodb://localhost:27017/admin",
+    "mongodb_development_user":"",
+    "mongodb_development_pass":""
+}
