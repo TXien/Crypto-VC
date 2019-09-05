@@ -1,4 +1,9 @@
 module.exports = {
+	test: function (req, res, next){
+		req.app.locals.sDAG_db.collection('block').find({}).toArray().then(response => {
+			res.status(200).json(response)
+		}).catch(error => console.error(error));
+	},
 	coinList: function (req, res, next){
 		res.send({
 				url:req.url,

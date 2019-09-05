@@ -2,6 +2,7 @@ var express = require('express');
 var casigo = require('../models/casigo');
 var router = express.Router();
 
+router.get('/test', casigo.test);
 
 router.get('/', casigo.casigo);
 
