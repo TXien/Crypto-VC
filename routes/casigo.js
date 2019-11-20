@@ -2,7 +2,9 @@ var express = require('express');
 var casigo = require('../models/casigo');
 var router = express.Router();
 
-router.get('/test', casigo.test);
+router.post('/test', casigo.test);
+
+router.post('/createAccount', casigo.createAccount)
 
 router.get('/', casigo.casigo);
 
@@ -12,7 +14,7 @@ router.get('/coinList', casigo.coinList);
 
 router.get('/coinPrice', casigo.coinPrice);
 
-router.get('/saleResult', casigo.saleResult);
+router.post('/saleResult', casigo.saleResult);
 
 router.get('/redeemResult', casigo.redeemResult);
 
